@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://pickadolly:flingan99@cluster0-jtjyc.mongodb.net/contactkeeper?retryWrites=true&w=majority",
+    "jwtSecret": "dhsjhdka"
+}
