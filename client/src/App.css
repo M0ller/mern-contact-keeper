@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
-  --dark-color: #333333;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --primary-color: #6a5acd;
+  --dark-color: #494454;
+  --light-color: rgb(238, 235, 243);
+  --danger-color: #ff6393;
+  --success-color: #00ba92;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -95,6 +95,10 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  -webkit-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+  border-radius: 3px;
 }
 
 /* List */
@@ -194,6 +198,10 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
 .btn-link {
@@ -221,6 +229,9 @@ img {
   background: var(--light-color);
   color: #333;
   border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
 }
 
 .alert {
@@ -296,6 +307,7 @@ img {
 /* Forms */
 input {
   margin: 1.2rem 0;
+  border-radius: 3px;
 }
 
 .form-text {
@@ -304,10 +316,10 @@ input {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -315,9 +327,10 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
