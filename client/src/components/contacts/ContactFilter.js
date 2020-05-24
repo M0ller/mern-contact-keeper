@@ -24,6 +24,7 @@ const ContactFilter = () => {
   return (
     <form>
       <input
+      style={{ marginTop: '3.5rem'}}
         ref={text}
         type="text"
         placeholder="Filter Contacts..."
