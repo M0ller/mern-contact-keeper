@@ -8,7 +8,7 @@ module.exports = function (req, res, next) {
   // Check if not token
   if (!token) {
     return res.status(401).json({
-      mes: "No token, authorization denied",
+      msg: "No token, authorization denied",
     });
   }
   try {

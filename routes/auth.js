@@ -13,7 +13,7 @@ const User = require("../models/User");
 // @access  Private
 router.get("/", auth, async (req, res) => {
   try {
-    const user = await await User.findById(req.user.id).select(
+    const user = await User.findById(req.user.id).select(
       "-password"
     );
     res.json(user);
@@ -24,7 +24,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // @route   POST api/auth
-// @desc    Auth user & get token
+// @desc    Login user & get token
 // @access  Public
 router.post(
   "/",
